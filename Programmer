@@ -1,0 +1,65 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package main;
+
+/**
+ *
+ * @author Students
+ */
+public class Programmer extends Employee implements Action{
+    private String language;
+    private String department;
+    private double hours_worked;
+    
+    public Programmer(){
+    }
+    
+    public void setLanguage(String e){
+    
+    }
+    
+    public String getLanguage(){
+    return language;
+    }
+    
+    public void setDepartment(String f){
+        
+    }
+    
+    public String getDepartment(){
+        return department;        
+    }
+    
+    public double getHoursWorked(){
+        return hours_worked;
+    }
+    
+    /**
+     *
+     */
+    @Override
+    public void work(){
+        hours_worked++;
+        System.out.println("I am coding ");        
+    }
+    
+    @Override
+    public void resign(){
+        System.out.print("I, " + name + department + " will resign");
+    }
+    
+    /**
+     *
+     */
+    @Override
+    public void info(){
+        System.out.println("ID: " + ID);
+        System.out.println("Name: " + name);
+//        System.out.println("Programmer");
+    }
+    
+    
+}
