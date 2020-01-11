@@ -1,0 +1,53 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package main;
+
+/**
+ *
+ * @author Students
+ */
+public class Employee {
+    protected String ID;
+    protected String name;
+    private int age;
+    private double salary;
+
+public void setID(String a){
+ID = a;    
+}
+
+public String getID(){
+return ID;
+}
+
+public void setName(String b){
+    name = b;
+}
+
+public String getName(){
+    return name;
+}
+
+public void setAge(int c){
+    age = c;
+}
+
+public int getAge(){
+return age;
+}
+
+
+
+public double getSalary(){
+return salary;
+}
+
+public void setSalary(double d){
+salary = d;
+}    
+}
+
+
